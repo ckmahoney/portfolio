@@ -1,0 +1,22 @@
+baseURL = 'https://cortlandmahoney.com/'
+languageCode = 'en-us'
+title = 'Cortland Mahoney'
+theme = 'hugo-kiera'
+sectionPagesMenu = 'main'
+resourceDir = "../resources"
+
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[author]
+    name = "Cortland Mahoney"           #Author name
+    github = "ckmahoney"         #Github username
+    
