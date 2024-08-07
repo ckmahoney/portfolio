@@ -1,4 +1,4 @@
-baseURL = 'https://cortlandmahoney.com/'
+baseURL = 'https://ckmahoney.github.io/portfolio/'
 languageCode = 'en-us'
 title = 'Cortland Mahoney'
 theme = 'hugo-kiera'
@@ -8,7 +8,7 @@ description = "A site about software projects and Cortland Mahoney"
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 100 # this is set low for demonstrating with dummy content. Set to a higher number
 enableRobotsTXT = true
 
 [sitemap]
@@ -19,4 +19,7 @@ enableRobotsTXT = true
 [author]
     name = "Cortland Mahoney"           #Author name
     github = "ckmahoney"         #Github username
-    
+
+[markup.tableOfContents]
+  startLevel = 1
+  endLevel = 2    
