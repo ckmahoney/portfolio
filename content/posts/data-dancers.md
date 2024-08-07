@@ -12,7 +12,7 @@ I enjoy introducing new members to Strudel and Hydra, which often blows their mi
 
 ## The First Algorave
 
-Our first algorave took place on September 15th, 2024. View footage [here](https://data-dancers.github.io/algoraving/)!Since then, I have helped community members learn how to contact venues and book events. 
+Our first algorave took place on September 15th, 2023. View footage [here](https://data-dancers.github.io/algoraving/)!Since then, I have helped community members learn how to contact venues and book events. 
 
 My goal is to teach sustainable community practices, allowing the group to grow and thrive indefinitely.
 
