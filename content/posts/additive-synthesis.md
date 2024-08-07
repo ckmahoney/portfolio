@@ -5,6 +5,7 @@ title: Additive Synthesis
 
 Additive synthesis, a powerful technique for sound generation, forms the backbone of `raudio`— an innovative synthesizer built with Rust.
 
+
 `raudio` pushes the boundaries of traditional physical modeling by introducing **Druidic Synthesis**, a method that ventures beyond natural sound reproduction into the realm of the fantastical. Designed with precision tuning in mind, it supports Just Intonation and the novel Monic Playbooks format.
 
 This project represents a deep dive into digital signal processing (DSP), combining cutting-edge technology with creative exploration.

@@ -2,7 +2,7 @@
 title: Data Dancers
 ---
 
-## Introduction
+## The Setup
 
 While in New York City, I organized algoraves and livecode workshops. After moving to Atlanta, I felt the absence of this vibrant livecode environment. Using Meetup.com, I found others interested in live coding and started Data Dancers. 
 
@@ -10,7 +10,7 @@ Though finding public spaces to meet and project screens or make noise can be ch
 
 I enjoy introducing new members to Strudel and Hydra, which often blows their minds and provides an accessible entry point to coding music or art immediately.
 
-## First Algorave and Community Growth
+## The First Algorave
 
 Our first algorave took place on September 15th, 2024. View footage [here](https://data-dancers.github.io/algoraving/)!Since then, I have helped community members learn how to contact venues and book events. 
 
