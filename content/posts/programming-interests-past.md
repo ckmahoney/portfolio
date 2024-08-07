@@ -1,18 +1,22 @@
 ---
-title: Programming Interests (past)
+title: Programming Interests (Past)
 ---
 
-While I was teaching myself how to write code and build software, there were a number of topics that were compelling. This brief list are my favorite ones. I don't want to spend time right now writing about these topics in depth. You can book a consultation call with me if it is important to you. Happy to describe in better detail any of these.
+## Autodidactic Journey
 
-  - Functional Programming (Hindley-Milner & Lisps)
-  - Emacs
-  - Desktop Ubuntu
-  - TypeScript
-  - Website and application development
-  - Publishing projects for like 6 months
+As a self-taught engineer, my journey of learning to code and build software was driven by curiosity and a commitment to mastering the craft independently. Several topics stood out as particularly compelling during this time. While I won't dive into them in depth here, I’m happy to discuss any of them in detail through a consultation. Here are my favorite past programming interests:
 
-Here are three programming books that I have read and learned a lot from:
+- Functional Programming (Hindley-Milner & Lisps)
+- Emacs
+- Desktop Ubuntu
+- TypeScript
+- Website and application development
+- Publishing projects for six months
 
-  - The C Book by Mike Banahan, Declan Brady and Mark Doran
-  - Secrets of the JavaScript Ninja, by John Resig, Bear Bibeault, and Josip Maras
-  - Clojure for the Brave and True, by Daniel Higginbotham 
+## Good books
+
+Here are three programming books that I learned a lot by reading and following along with a repl or compiler:
+
+- *The C Book* by Mike Banahan, Declan Brady, and Mark Doran
+- *Secrets of the JavaScript Ninja* by John Resig, Bear Bibeault, and Josip Maras
+- *Clojure for the Brave and True* by Daniel Higginbotham
