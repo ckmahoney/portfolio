@@ -1,0 +1,13 @@
+</main>
+    <footer style="text-align: center; padding-top: 15px; padding-bottom: 15px;">
+        <code>let us = make music</code>
+    </footer>
+</div>
+<script src="{{ "js/scripts.js" | relURL }}"></script>
+{{ if .Site.Config.Services.GoogleAnalytics }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+{{ partial "user_footer" . }}
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<style>
+ #container .custom-toc #TableOfContents ul {
+    display: block 
+ }
+
+.custom-toc {
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-toc ul {
+    list-style-type: initial;
+    padding-left: 0;
+    margin: 0;
+}
+
+.custom-toc li {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    /* text-decoration: none; */
+}
+
+.custom-toc a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Ensures the links stack vertically */
+}
+
+.custom-toc a:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+
+<nav class="custom-toc">
+    <h2>Table of Contents</h2>
+    {{ .TableOfContents }}
+  </nav>

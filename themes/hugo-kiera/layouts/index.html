@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section id="home">
+  {{ if .IsHome }}
+    
+    <div style="text-align:center">
+      <p>Hello, you have reached the websitesite of <code>Cortland Mahoney</code>. <br>Please listen to four hours of generated music on YouTube: 
+        
+        <br>
+        <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mFipUHqXrw0?si=T--cD080yj2ahuYb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <hr/>
+
+      <p>This music was <i>composed</i> with my secret software, <code>tin-pan</code>.</p>
+
+      <p>It's audio was <i>rendered</i> with my FOSS software, <a href="https://github.com/ckmahoney/raudio" target="_blank"><code>raudio</code></a>
+
+      <p>The video was <i>generated</i> with my secret software, <code>ross</code>.</p>
+      <hr/>
+      </div>
+    <p>You are probably here to learn about me. Here you go!</p>
+      
+  {{ end }}
+  <ul>
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages 500 }}
+    {{ range $index, $page := $paginator.Pages }}
+
+    <li {{if eq $index 0}}class="first" {{end}}>
+      <h1><a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ .Title }}</a></h1>
+      {{ partial "aside" . }}
+      {{ partial "featured_image" .}}
+      <p>{{ .Summary }}</p>
+      {{ if .Truncated }}
+      <div style="display: block;width: 100%;">
+        <a style="text-align:right; display: block;" href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
+      </div>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+<!-- {{ template "_internal/pagination.html" . }} -->
+
+{{ end }}
