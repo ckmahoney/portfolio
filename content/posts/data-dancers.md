@@ -49,6 +49,6 @@ Through organizing these events, I learned:
 
 - **Engagement:** How to improve my interactions with new meetup attendees, making them feel warmly welcomed and involved.
 - **Communication:**
-  - **Non-Technical:** Improved communication to non-technical to understand JavaScript 101, enabling them to use it immediately for editing art in the browser.
-  - **Technical:** Assisted experienced users by directing them to documentation, examples templates and presets for Hydra/Strudel, and additional livecoding tools and resources.
-- **Event Organization:** How to ask for help in organizing public events, which creates a better sense of collaboration and community.
+  - **Non-Technical:** Improved communication to non-technical artists. I helped them understand JavaScript 101 and enabling them to use it immediately for editing art in the browser.
+  - **Technical:** Assisted experienced users by directing them to documentation, examples templates, and presets for Hydra/Strudel, and additional livecoding tools and resources.
+- **Event Organization:** The biggest learn for me was how to ask for help in organizing public events. Not only did this become necesssary is time went on (hosting is a lot of work!), but also enabling others to voluntarily provide their skills and time creates a better sense of collaboration and community.
