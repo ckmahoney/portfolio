@@ -2,8 +2,6 @@
 title: Data Dancers
 ---
 
-## [https://data-dancers.github.io/](https://data-dancers.github.io/)
-
 ## Introduction
 
 While in New York City, I organized algoraves and livecode workshops. After moving to Atlanta, I felt the absence of this vibrant livecode environment. Using Meetup.com, I found others interested in live coding and started Data Dancers. 
@@ -35,6 +33,13 @@ After 12 months of monthly meetups in various locations, it became challenging t
 
 
 You can see the website we created during the hackathon [here](https://data-dancers.github.io/). This site also features event history, including workshops.
+
+## The Hackathon Result
+
+We made a website! Visit here:
+
+### [https://data-dancers.github.io/](https://data-dancers.github.io/)
+
 
 ## Ongoing Community Success
 
