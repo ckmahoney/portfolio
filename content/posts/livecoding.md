@@ -31,6 +31,15 @@ With LivecodeNYC, I helped dozens of artists get their first experience performi
 
 With Data Dancers, I built the community from scratch. There was no livecoding group in Atlanta before I arrived, and now we have a core group of six members/contributors and a dozen peripheral attendees.
 
+## Gallery
+
+{{< click_image title="Roxanne Harris presenting on Sonic Pi" src="algorave turns ten workshop roxanne.jpg" >}}
+{{< click_image title="Dave Stein presenting on FoxDot" src="algorave turns ten workshops.png" >}}
+{{< click_image title="Flyer for Open Cables" src="algorave Open_cables_template.png" >}}
+{{< click_image title="Flyer for Process Power" src="algorave turns ten.jpg" >}}
+{{< click_image title="Flyer for Algogayze" src="algorave-algogayze.png" >}}
+
+
 ## Personal Reflections
 
 Livecoding blurs the lines between art and technology. It offers software developers a new way to express themselves and helps artists reshape their understanding of music and art. And it's so fun!

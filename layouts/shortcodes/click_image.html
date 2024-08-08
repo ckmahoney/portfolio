@@ -1,0 +1,14 @@
+{{ $prefix := "images/" }}
+{{ $src := printf "%s%s" $prefix (.Get "src") }}
+{{ $title := .Get "title" }}
+
+<div style="max-height: 200px; margin: 50px ; display: block; box-sizing: border-box;">
+    <div style="font-weight: bold;">{{ $title }}</div>
+    <div style="max-height: 200px; text-align: center;">
+        {{ with resources.Get $src}}
+            <a href='{{ .Permalink }}' target="_blank" rel="noopener noreferrer">
+                <img src="{{ .RelPermalink }}" alt="{{ $title }}" style="max-height: 200px; width: auto; height: auto; max-width: 100%;"/>
+            </a>
+        {{ end }}
+    </div>
+</div>
