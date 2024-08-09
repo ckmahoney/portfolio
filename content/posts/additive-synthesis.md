@@ -6,7 +6,7 @@ title: Additive Synthesis
 Additive synthesis, a powerful technique for sound generation, forms the backbone of `raudio`— an innovative synthesizer built with Rust.
 
 
-`raudio` pushes the boundaries of traditional physical modeling by introducing **Druidic Synthesis**, a method that ventures beyond natural sound reproduction into the realm of the fantastical. Designed with precision tuning in mind, it supports Just Intonation and the novel Monic Playbooks format.
+Raudio pushes the boundaries of traditional physical modeling by introducing **Druidic Synthesis**, a method that ventures beyond natural sound reproduction into the realm of the fantastical. Designed with precision tuning in mind, it supports Just Intonation and the novel Monic Playbooks format.
 
 This project represents a deep dive into digital signal processing (DSP), combining cutting-edge technology with creative exploration.
 
@@ -19,13 +19,74 @@ My motive to research and develop raudio is twofold:
 
 ## Druidic Synthesis
 
-Druidic Synthesis offers generation-time dynamic modulation, allowing a sound to morph from a classic square wave into an unearthly synth. It provides three primary methods of modulation:
+Druidic Synthesis offers nearly infinite dynamic modulation, allowing a sound to morph from a classic square wave into an unearthly synth. It provides three primary methods of modulation:
 
-1. Conventional ADSR envelopes (for each of amplitude, frequency, phase offset).
-2. Conventional "guitar effects" (a list of constant or time-varying modulators for each of amplitude, frequency, phase).
-3. Novel "modbox" effect (a list of per-sample, per-multiplier (harmonic) modulators for each of amplitude, frequency, phase, and cps (time)).
+1. Conventional ADSR envelopes (for each of amplitude, frequency, and phase offset).
+2. Conventional "guitar effects" (a list of constant or time-varying modulators for each of amplitude, frequency, and phase).
+3. Novel "knobmods" effect (a list of per-sample, per-multiplier (harmonic) modulators for each of amplitude, frequency, phase, and cps (time)).
 
 The third point is the driving reason why additive synthesis is the choice synthesis model.
+
+Here is an example implementation of Rust types for each of the three modulation methods.
+
+```
+//# The "ADSR Envelopes"
+
+pub type Expr = (AmpCont, FreqCont, PhaseCont);
+pub type AmpCont = Vec<Range>;
+pub type FreqCont = Vec<Freq>;
+pub type PhaseCont = Vec<Radian>;
+
+
+//# The "Guitar Effects"
+
+pub type ModifiersHolder = (
+    Vec<ModulationEffect>, 
+    Vec<ModulationEffect>, 
+    Vec<ModulationEffect>, 
+    Vec<ModulationEffect>
+);
+#[derive(Debug, Clone, Copy)]
+pub enum ModulationEffect {
+    Tremelo(AmplitudeModParams),
+    Vibrato(PhaseModParams),
+    Noise(PhaseModParams),
+    Chorus(PhaseModParams),
+    Sway(FrequencyModParams),
+    Warp(PhaseModParams)
+}
+
+/// Parameters for amplitude modulation effects.
+#[derive(Debug, Clone, Copy)]
+pub struct AmplitudeModParams {
+    pub freq: f32,
+    pub depth: f32,
+    pub offset: f32,
+}
+
+/// Parameters for frequency modulation effects.
+#[derive(Debug, Clone, Copy)]
+pub struct FrequencyModParams {
+    pub rate: f32, 
+    pub offset: f32,
+}
+
+/// Parameters for phase modulation effects.
+#[derive(Debug, Clone, Copy)]
+pub struct PhaseModParams {
+    pub rate: f32, 
+    pub depth: f32,
+    pub offset: f32,
+}
+
+//# The "KnobMods" effects
+pub struct KnobMods (pub Vec<KnobbedRanger>, pub Vec<KnobbedRanger>, pub Vec<KnobbedRanger>);
+pub type KnobbedRanger = (Knob, Ranger);
+
+/// Signature:
+/// knob, cps, fundamental, multiplier, n_cycles, pos_cycles -> modulation value
+pub type Ranger  = fn(&Knob, f32, f32, f32, f32, f32) -> f32;
+```
 
 ## What is Just Intonation?
 
