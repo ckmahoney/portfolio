@@ -11,7 +11,7 @@ As a self-taught engineer, my journey of learning to code and build software was
 - Desktop Ubuntu
 - TypeScript
 - Website and application development
-- Publishing projects for six months
+- Cloud servers and deployment techniques
 
 ## Good books
 
